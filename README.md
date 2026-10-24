@@ -1,6 +1,6 @@
 # PathTracerFS65
 
-This is a path tracer program I wrote in 2023, before I began to use GitHub. The original `PathTracerFS65.cpp` file is unchanged from when I last updated it on September 4, 2023 (so excuse my comment on line 15).
+This is a path tracer program I wrote in 2023, before I began to use GitHub regularly. The original `PathTracerFS65.cpp` file is unchanged from when I last updated it on September 4, 2023 (so excuse my comment on line 15).
 
 This program renders a simple scene by simulating photon interactions with surfaces, with each intersection reflecting and accumulating colored light. The code is run entirely on a single CPU thread and the program stores the results for 1/10/50/100 photons per pixel, and displays the final result in a new window.
 
@@ -17,3 +17,14 @@ Here are the results, each image is 960x720 pixels, and every photon is capped a
 
 100 photons per pixel:
 ![Daniel_Li_updated_raytracer_100frames_69120000photons.png](Daniel_Li_updated_raytracer_100frames_69120000photons.png)
+
+To run the program, clone this repo locally, ensure you have `SDL2` installed on your system (such that it is findable for CMake), then run
+```bash
+cmake -B build && cmake --build build
+build/PathTracerFS65
+```
+
+The renders are saved as `.ppm` files, so to convert to `.png` files, run the following ffmpeg command
+```bash
+for f in *.ppm; do ffmpeg -i "$f" "${f%.ppm}.png"; done
+```
