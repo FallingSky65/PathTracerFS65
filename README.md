@@ -8,3 +8,12 @@ Here are the results, each image is 960x720 pixels, and every photon is capped a
 
 1 photon per pixel:
 ![Daniel_Li_updated_raytracer_1frames_691200photons.png](Daniel_Li_updated_raytracer_1frames_691200photons.png)
+
+10 photons per pixel:
+![Daniel_Li_updated_raytracer_10frames_6912000photons.png](Daniel_Li_updated_raytracer_10frames_6912000photons.png)
+
+50 photons per pixel:
+![Daniel_Li_updated_raytracer_50frames_34560000photons.png](Daniel_Li_updated_raytracer_50frames_34560000photons.png)
+
+100 photons per pixel:
+![Daniel_Li_updated_raytracer_100frames_69120000photons.png](Daniel_Li_updated_raytracer_100frames_69120000photons.png)
